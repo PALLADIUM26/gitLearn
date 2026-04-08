@@ -186,6 +186,16 @@ git remote add origin [URL]
 git push -u origin main
 ```
 __________________________________________________
+## Undo staging:
+### For single staged file:
+```
+git restore --staged [file name]
+```
+### For all staged files:
+```
+git restore --staged .
+```
+__________________________________________________
 ## Undo commits:
 ### For last n commits and keep files staged:
 ```
