@@ -223,9 +223,16 @@ GIT_AUTHOR_DATE="[YYYY-MM-DD]T[hh:mm:ss]" GIT_COMMITTER_DATE="[YYYY-MM-DD]T[hh:m
 ```
 git push --force
 ```
-### For New commit (for git bash):
+### For New commit:
+#### In Git bash-
 ```
 GIT_AUTHOR_DATE="[YYYY-MM-DD]T[hh:mm:ss]" GIT_COMMITTER_DATE="[YYYY-MM-DD]T[hh:mm:ss]" git commit -m "message"
+```
+#### In CMD (not powershell)-
+```
+set GIT_AUTHOR_DATE=[YYYY-MM-DD]T[hh:mm:ss]
+set GIT_COMMITTER_DATE=[YYYY-MM-DD]T[hh:mm:ss]
+git commit -m "message"
 ```
 ### Push:
 ```
