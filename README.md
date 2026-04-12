@@ -186,6 +186,16 @@ git remote add origin [URL]
 git push -u origin main
 ```
 __________________________________________________
+## Undo staging:
+### For single staged file:
+```
+git restore --staged [file name]
+```
+### For all staged files:
+```
+git restore --staged .
+```
+__________________________________________________
 ## Undo commits:
 ### For last n commits and keep files staged:
 ```
@@ -213,9 +223,16 @@ GIT_AUTHOR_DATE="[YYYY-MM-DD]T[hh:mm:ss]" GIT_COMMITTER_DATE="[YYYY-MM-DD]T[hh:m
 ```
 git push --force
 ```
-### For New commit (for git bash):
+### For New commit:
+#### In Git bash-
 ```
 GIT_AUTHOR_DATE="[YYYY-MM-DD]T[hh:mm:ss]" GIT_COMMITTER_DATE="[YYYY-MM-DD]T[hh:mm:ss]" git commit -m "message"
+```
+#### In CMD (not powershell)-
+```
+set GIT_AUTHOR_DATE=[YYYY-MM-DD]T[hh:mm:ss]
+set GIT_COMMITTER_DATE=[YYYY-MM-DD]T[hh:mm:ss]
+git commit -m "message"
 ```
 ### Push:
 ```
